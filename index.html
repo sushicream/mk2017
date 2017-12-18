@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>まくくまとさんたさんのくりしますものがたり(β)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <header class="header-container"></header>
+    <div class="hr"></div>
+
+    <div class="main-container">
+        <div class="book-container">
+            <div class="book-image-container">
+                <div class="book-image-image" id="image">
+                    
+                </div>
+            </div>
+            <div class="book-text-container title">
+                <!-- <img src="./img/christmas_title.png" class="title"> -->
+                <h1>
+                    まくくまと<br>
+                    さんたさんの<br>
+                    くりすますのものがたり(β)
+                </h1>
+            </div>
+        </div>
+    
+        <div class="controls">
+            <div class="prev" id="prev" style="visibility: hidden;">◀︎ もどる</div>
+            <div class="next" id="next"><a href="./main.html">よむ ▶</a></div>
+        </div>
+    </div>
+    
+    <footer class="footer-container">
+        <div class="hr"></div>  
+    </footer>
+    <script>
+    if (window.innerWidth < 750) {
+        console.log("せまい");
+        var body = document.getElementById('body');
+        while (body.firstChild) body.removeChild(body.firstChild);
+        
+        var div = document.createElement('div');
+        div.textContent = 'けいたいには　まら　たいおうして　ないんら・・・';
+        div.setAttribute('class', 'gomenne');
+        body.appendChild(div);
+    }</script>
+</body>
+</html>
