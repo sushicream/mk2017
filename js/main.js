@@ -80,12 +80,12 @@
                 image.style.visibility = 'hidden';
                 return;
             }
-            imgPath = './img/christmas_' + (parseInt(currentPage) + 1) + '.png';
+            imgPath = './img/christmas_' + (parseInt(currentPage) + 1) + '.jpg';
             // クラスを遷移後のページ番号に
             image.setAttribute('class', (parseInt(currentPage) + 1));          
         }
         else {
-            imgPath = './img/christmas_' + (parseInt(currentPage) - 1) + '.png';
+            imgPath = './img/christmas_' + (parseInt(currentPage) - 1) + '.jpg';
             // クラスを現在のページ番号に
             image.setAttribute('class', (parseInt(currentPage) - 1));
         }
