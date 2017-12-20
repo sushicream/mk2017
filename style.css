@@ -9,6 +9,7 @@ body {
     background-color: #C62828;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 h1 {
@@ -22,7 +23,7 @@ h1 {
 
 .header-container {
     width: 100%;
-    height: 160px;
+    min-height: 100px;
     top: 0;
     background-image: url(./img/christmas.jpg);
     background-size: contain;
@@ -30,7 +31,7 @@ h1 {
 
 .footer-container {
     width: 100%;
-    height: 184px;
+    min-height: 100px;
     bottom: 0;
     background-image: url(./img/christmas_house.jpg);
     background-size: contain;
